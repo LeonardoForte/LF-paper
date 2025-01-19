@@ -33,9 +33,17 @@
             background-color: #f7ebe8;
             padding: 20px 0;
         }
+    
         .hero-header {
-            background: url('img/logo.png') no-repeat center center/cover;
+            background-color: #f5a8a6;
             color: white;
+            position: relative;
+        }
+        
+        
+        .hero-header .container {
+            position: relative;
+            z-index: 2;
         }
     </style>
 </head>
@@ -65,7 +73,9 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="py-5 text-center" style="background-color: #ffe8e6;">
+    <header class="py-5 text-center hero-header">
+        <div class="background-image"></div>
+        <img src="img/logo.png" alt="Logo" class="logo-image">
         <div class="container">
             <h1 class="display-4">Organize sua Vida com Elegância</h1>
             <p class="lead">Planners, Agendas e Cadernetas com design delicado para o seu dia a dia.</p>
@@ -174,6 +184,9 @@
     <section id="contato" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Entre em Contato</h2>
+            <div class="text-center mb-4">
+                <a href="https://wa.me/5585989001020" class="btn btn-success btn-lg" target="_blank">Fale Conosco no WhatsApp</a>
+            </div>
             <form>
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome</label>
@@ -195,7 +208,7 @@
     <!-- Footer -->
     <footer class="footer text-center">
         <div class="container">
-            <p class="mb-0">&copy; 2025 Minha Loja. Todos os direitos reservados.</p>
+            <p class="mb-0">&copy; 2025 Drica Papper. Todos os direitos reservados.</p>
         </div>
     </footer>
 
